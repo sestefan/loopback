@@ -1,0 +1,41 @@
+{
+  "name": "eventType",
+  "base": "PersistedModel",
+  "options": {
+    "idInjection": false, 
+    "postgresql": {
+      "schema": "binbit",
+      "table": "event_types"
+    }  
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "event_type_id",
+        "dataType": "integer"
+      }
+    },
+    "notificationTypeId": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "notification_type_id",
+        "dataType": "integer"
+      }
+    },
+    "actionTypeId": {
+      "type": "number",
+      "required": true,
+      "postgresql": {
+        "columnName": "action_type_id",
+        "dataType": "integer"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
